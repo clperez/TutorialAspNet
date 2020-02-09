@@ -18,9 +18,15 @@ namespace Current2.Controllers
         }
 
 
-        public ViewResult Index()
+        public ViewResult Index() => View(productRepository.Entities.Where(p => p?.Price < 50));
+
+        [HttpGet]
+        public IActionResult AddProduct() => View(new Product());
+        [HttpPost]
+        public IActionResult AddProduct(Product p)
         {
-            return View(productRepository.Entities);
+            productRepository.AddProduct(p);
+            return RedirectToAction("Index");
         }
     }
 }
