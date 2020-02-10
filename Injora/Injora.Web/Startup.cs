@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Qwantalabs.Shared;
 
 namespace Injora
 {
@@ -16,6 +17,7 @@ namespace Injora
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.SetupIoC(typeof(Startup));
             services.AddMvc();
         }
 
@@ -32,6 +34,7 @@ namespace Injora
             app.UseStaticFiles();
             app.UseEndpoints(endpoints =>
             {
+                // To be removed
                 endpoints.MapDefaultControllerRoute();
             });
         }
