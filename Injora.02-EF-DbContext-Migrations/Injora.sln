@@ -7,16 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Injora.Web", "Injora.Web\In
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Injora.Test", "Injora.Test\Injora.Test.csproj", "{B937D65E-79B0-4486-BD16-07B5958B78D3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Injora.Model", "Injora.Model\Injora.Model.csproj", "{B80C6CBF-69CD-4BD7-B292-296BC26DC064}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Injora.Model", "Injora.Model\Injora.Model.csproj", "{B80C6CBF-69CD-4BD7-B292-296BC26DC064}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Qwantalabs.Shared", "Qwantalabs.Shared\Qwantalabs.Shared.csproj", "{5F702995-AF1E-427D-9D5B-B89F997831E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qwantalabs.Shared", "Qwantalabs.Shared\Qwantalabs.Shared.csproj", "{5F702995-AF1E-427D-9D5B-B89F997831E1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Qwantalabs.Shared.AspNetCore", "Qwantalabs.Shared.AspNetCore\Qwantalabs.Shared.AspNetCore.csproj", "{C3A7D360-301F-45EA-BA19-24395E57DF81}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "local-tools", "local-tools", "{9F99C7BA-0B14-4D67-9ACB-09B5C2C5E4F1}"
-	ProjectSection(SolutionItems) = preProject
-		.config\dotnet-tools.json = .config\dotnet-tools.json
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qwantalabs.Shared.AspNetCore", "Qwantalabs.Shared.AspNetCore\Qwantalabs.Shared.AspNetCore.csproj", "{C3A7D360-301F-45EA-BA19-24395E57DF81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

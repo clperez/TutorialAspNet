@@ -9,17 +9,14 @@ namespace Injora.Controllers
 {
     public class ProjectsController : Controller
     {
-        private readonly IProjectRepository repository;
-        public int PageSize = 4;
-
+        private readonly IProjectRepository _projectRepository;
 
         public ProjectsController(IProjectRepository projectRepository)
         {
-            repository = projectRepository;
+            _projectRepository = projectRepository;
         }
 
         [HttpGet]
-        public ViewResult List(int productPage=1) => 
-            View(repository.Projects.OrderBy(p=>p.ProjectID).Skip((productPage - 1) * PageSize).Take(PageSize));
+        public ViewResult List() => View(_projectRepository.Projects);
     }
 }

@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Qwantalabs.Shared.AspNetCore.IoC;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,15 +10,10 @@ namespace Qwantalabs.Shared
 {
     public static class IoC
     {
-        public interface IComponent
-        {
-            void Setup(IServiceCollection services);
-        }
-
-        public static void SetupIoC (this IServiceCollection services, Type type)
+        public static void SetupIoC (this IServiceCollection services, Type type, IConfiguration configuration)
         {
             var componentTypes = Array.FindAll(type.Assembly.GetTypes(), t => typeof(IComponent).IsAssignableFrom(t));
-            Array.ForEach(componentTypes, t => ((IComponent)(Activator.CreateInstance(t))).Setup(services));
+            Array.ForEach(componentTypes, t => ((IComponent)(Activator.CreateInstance(t))).Setup(services, configuration));
         }
     }
 }
