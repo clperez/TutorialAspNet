@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Injora.Web", "Injora.Web\Injora.Web.csproj", "{4D240C93-DAC8-4FA4-B7FB-AE18AC4A5C7A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Injora.Test", "Injora.Test\Injora.Test.csproj", "{B937D65E-79B0-4486-BD16-07B5958B78D3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Injora.Model", "Injora.Model\Injora.Model.csproj", "{B80C6CBF-69CD-4BD7-B292-296BC26DC064}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Qwantalabs.Shared", "Qwantalabs.Shared\Qwantalabs.Shared.csproj", "{5F702995-AF1E-427D-9D5B-B89F997831E1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Qwantalabs.Shared.AspNetCore", "Qwantalabs.Shared.AspNetCore\Qwantalabs.Shared.AspNetCore.csproj", "{C3A7D360-301F-45EA-BA19-24395E57DF81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "local-tools", "local-tools", "{9F99C7BA-0B14-4D67-9ACB-09B5C2C5E4F1}"
+	ProjectSection(SolutionItems) = preProject
+		.config\dotnet-tools.json = .config\dotnet-tools.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D240C93-DAC8-4FA4-B7FB-AE18AC4A5C7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D240C93-DAC8-4FA4-B7FB-AE18AC4A5C7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D240C93-DAC8-4FA4-B7FB-AE18AC4A5C7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D240C93-DAC8-4FA4-B7FB-AE18AC4A5C7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B937D65E-79B0-4486-BD16-07B5958B78D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B937D65E-79B0-4486-BD16-07B5958B78D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B937D65E-79B0-4486-BD16-07B5958B78D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B937D65E-79B0-4486-BD16-07B5958B78D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B80C6CBF-69CD-4BD7-B292-296BC26DC064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B80C6CBF-69CD-4BD7-B292-296BC26DC064}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B80C6CBF-69CD-4BD7-B292-296BC26DC064}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B80C6CBF-69CD-4BD7-B292-296BC26DC064}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F702995-AF1E-427D-9D5B-B89F997831E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F702995-AF1E-427D-9D5B-B89F997831E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F702995-AF1E-427D-9D5B-B89F997831E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F702995-AF1E-427D-9D5B-B89F997831E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3A7D360-301F-45EA-BA19-24395E57DF81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3A7D360-301F-45EA-BA19-24395E57DF81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3A7D360-301F-45EA-BA19-24395E57DF81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3A7D360-301F-45EA-BA19-24395E57DF81}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF524DF0-9891-4764-A7BB-AA0DEEB76A25}
+	EndGlobalSection
+EndGlobal

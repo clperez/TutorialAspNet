@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Injora.Models
 {
-    public class ProjectsPagingInfo
+    public class PagingInfo
     {
         public int TotalItems { get; set; }
         public int ItemsPerPage { get; set; }
